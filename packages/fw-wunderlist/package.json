@@ -1,5 +1,5 @@
 {
-  "name": "fw-wunderlist",
+  "name": "@cli-assistant/fw-wunderlist",
   "description": "Working with wunderlist",
   "version": "0.0.0",
   "author": "VadimKh @VadimKh",

@@ -16,11 +16,11 @@ Daily flow helps you stay organized
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g fw
+$ npm install -g @cli-assistant/fw
 $ fw COMMAND
 running command...
 $ fw (-v|--version|version)
-fw/0.0.0 darwin-x64 node-v10.5.0
+@cli-assistant/fw/0.0.0 darwin-x64 node-v10.5.0
 $ fw --help [COMMAND]
 USAGE
   $ fw COMMAND
@@ -29,24 +29,8 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`fw init`](#fw-init-file)
 * [`fw help [COMMAND]`](#fw-help-command)
-
-## `fw init [FILE]`
-
-describe the command here
-
-```
-USAGE
-  $ fw init [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-```
-
-_See code: [src/commands/init.ts](https://github.com/VadimKh/fw/blob/v0.0.0/src/commands/init.ts)_
+* [`fw init [FILE]`](#fw-init-file)
 
 ## `fw help [COMMAND]`
 
@@ -65,4 +49,19 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.3/src/commands/help.ts)_
 
+## `fw init [FILE]`
+
+describe the command here
+
+```
+USAGE
+  $ fw init [FILE]
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+```
+
+_See code: [src/commands/init.ts](https://github.com/VadimKh/fw/blob/v0.0.0/src/commands/init.ts)_
 <!-- commandsstop -->

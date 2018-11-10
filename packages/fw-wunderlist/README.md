@@ -16,11 +16,11 @@ Working with wunderlist
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g fw-wunderlist
+$ npm install -g @cli-assistant/fw-wunderlist
 $ oclif-example COMMAND
 running command...
 $ oclif-example (-v|--version|version)
-fw-wunderlist/0.0.0 darwin-x64 node-v10.5.0
+@cli-assistant/fw-wunderlist/0.0.0 darwin-x64 node-v10.5.0
 $ oclif-example --help [COMMAND]
 USAGE
   $ oclif-example COMMAND
