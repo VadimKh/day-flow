@@ -29,29 +29,24 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`fw hello [FILE]`](#fw-hello-file)
+* [`fw init`](#fw-init-file)
 * [`fw help [COMMAND]`](#fw-help-command)
-* [`fw init [FILE]`](#fw-init-file)
 
-## `fw hello [FILE]`
+## `fw init [FILE]`
 
 describe the command here
 
 ```
 USAGE
-  $ fw hello [FILE]
+  $ fw init [FILE]
 
 OPTIONS
   -f, --force
   -h, --help       show CLI help
   -n, --name=name  name to print
-
-EXAMPLE
-  $ fw hello
-  hello world from ./src/hello.ts!
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/VadimKh/fw/blob/v0.0.0/src/commands/hello.ts)_
+_See code: [src/commands/init.ts](https://github.com/VadimKh/fw/blob/v0.0.0/src/commands/init.ts)_
 
 ## `fw help [COMMAND]`
 
@@ -70,19 +65,4 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.3/src/commands/help.ts)_
 
-## `fw init [FILE]`
-
-describe the command here
-
-```
-USAGE
-  $ fw init [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-```
-
-_See code: [src/commands/init.ts](https://github.com/VadimKh/fw/blob/v0.0.0/src/commands/init.ts)_
 <!-- commandsstop -->
