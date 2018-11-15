@@ -1,25 +1,18 @@
 import {Command, flags} from '@oclif/command'
+import * as Configstore from 'configstore'
+
+const store = new Configstore('fw')
 
 export default class Init extends Command {
-  static description = 'describe the command here'
+  static description = 'Init is used to initialized app and all your plugins'
 
   static flags = {
-    help: flags.help({char: 'h'}),
-    // flag with a value (-n, --name=VALUE)
-    name: flags.string({char: 'n', description: 'name to print'}),
-    // flag with no value (-f, --force)
-    force: flags.boolean({char: 'f'}),
+    help: flags.help({char: 'h'})
   }
 
-  static args = [{name: 'file'}]
-
   async run() {
-    const {args, flags} = this.parse(Init)
-
-    const name = flags.name || 'world'
-    this.log(`hello ${name} from /Users/vadimkh/Projects/day-flow/packages/fw/src/commands/init.ts`)
-    if (args.file && flags.force) {
-      this.log(`you input --force and --file: ${args.file}`)
-    }
+    this.log('Start to initialize you app:')
+    await this.config.runHook('init_app', {id: 'init', argv: ['fw']})
+    this.log(`May the force be with you, ${store.get('name')}`)
   }
 }

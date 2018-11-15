@@ -1,22 +1,17 @@
 {
-  "name": "@cli-assistant/fw",
-  "description": "Daily flow helps you stay organized",
+  "name": "fw-calendar",
+  "description": "Integration with google calendar",
   "version": "0.0.0",
   "author": "VadimKh @VadimKh",
-  "bin": {
-    "fw": "./bin/run"
-  },
-  "bugs": "https://github.com/VadimKh/fw/issues",
+  "bugs": "https://github.com/VadimKh/fw-calendar/issues",
   "dependencies": {
-    "@cli-assistant/fw-wunderlist": "^0",
     "@oclif/command": "^1",
     "@oclif/config": "^1",
-    "@oclif/plugin-help": "^2",
-    "configstore": "^4.0.0",
     "tslib": "^1"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1",
+    "@oclif/plugin-help": "^2",
     "@oclif/test": "^1",
     "@oclif/tslint": "^3",
     "@types/chai": "^4",
@@ -34,32 +29,29 @@
     "node": ">=8.0.0"
   },
   "files": [
-    "/bin",
     "/lib",
     "/npm-shrinkwrap.json",
-    "/oclif.manifest.json"
+    "/oclif.manifest.json",
+    "/yarn.lock"
   ],
-  "homepage": "https://github.com/VadimKh/fw",
+  "homepage": "https://github.com/VadimKh/fw-calendar",
   "keywords": [
-    "oclif"
+    "oclif-plugin"
   ],
   "license": "MIT",
-  "main": "lib/index.js",
   "oclif": {
     "commands": "./lib/commands",
-    "bin": "fw",
-    "plugins": [
-      "@oclif/plugin-help",
-      "@cli-assistant/fw-wunderlist"
+    "bin": "oclif-example",
+    "devPlugins": [
+      "@oclif/plugin-help"
     ]
   },
-  "repository": "VadimKh/fw",
+  "repository": "VadimKh/fw-calendar",
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
     "posttest": "tslint -p test -t stylish",
     "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
     "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
     "version": "oclif-dev readme && git add README.md"
-  },
-  "types": "lib/index.d.ts"
+  }
 }

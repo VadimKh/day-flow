@@ -7,6 +7,9 @@
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1",
+    "axios": "^0.18.0",
+    "configstore": "^4.0.0",
+    "enquirer": "^2.0.6",
     "tslib": "^1"
   },
   "devDependencies": {
@@ -44,7 +47,10 @@
     "bin": "oclif-example",
     "devPlugins": [
       "@oclif/plugin-help"
-    ]
+    ],
+    "hooks": {
+      "init_app": "./lib/hooks/init/initApp"
+    }
   },
   "repository": "VadimKh/fw-wunderlist",
   "scripts": {
