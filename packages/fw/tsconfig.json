@@ -10,6 +10,6 @@
     "composite": true
   },
   "include": [
-    "src/**/*"
+    "src/**/*", "../fw-wunderlist/src/hooks/today/fwToday.ts", "../fw-wunderlist/src/store/index.ts"
   ]
 }

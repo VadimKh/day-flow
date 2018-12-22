@@ -1,0 +1,19 @@
+{
+  "name": "@cli-assistant/fw-core",
+  "version": "0.0.1",
+  "description": "",
+  "main": "build/index.js",
+  "typings": "build/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "compile": "tsc",
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@types/configstore": "^4.0.0",
+    "configstore": "^4.0.0"
+  },
+  "repository": "VadimKh/fw-core"
+}

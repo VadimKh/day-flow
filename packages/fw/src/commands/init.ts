@@ -1,7 +1,5 @@
 import {Command, flags} from '@oclif/command'
-import * as Configstore from 'configstore'
-
-const store = new Configstore('fw')
+import {store} from '@cli-assistant/fw-core'
 
 export default class Init extends Command {
   static description = 'Init is used to initialized app and all your plugins'
@@ -13,6 +11,6 @@ export default class Init extends Command {
   async run() {
     this.log('Start to initialize you app:')
     await this.config.runHook('init_app', {id: 'init', argv: ['fw']})
-    this.log(`May the force be with you, ${store.get('name')}`)
+    this.log(`May the force be with you, ${store.get('wd_access_token')}`)
   }
 }

@@ -30,7 +30,9 @@ USAGE
 # Commands
 <!-- commands -->
 * [`fw help [COMMAND]`](#fw-help-command)
-* [`fw init [FILE]`](#fw-init-file)
+* [`fw init`](#fw-init)
+* [`fw today [FILE]`](#fw-today-file)
+* [`fw todo [FILE]`](#fw-todo-file)
 
 ## `fw help [COMMAND]`
 
@@ -49,13 +51,27 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.3/src/commands/help.ts)_
 
-## `fw init [FILE]`
+## `fw init`
+
+Init is used to initialized app and all your plugins
+
+```
+USAGE
+  $ fw init
+
+OPTIONS
+  -h, --help  show CLI help
+```
+
+_See code: [src/commands/init.ts](https://github.com/VadimKh/fw/blob/v0.0.0/src/commands/init.ts)_
+
+## `fw today [FILE]`
 
 describe the command here
 
 ```
 USAGE
-  $ fw init [FILE]
+  $ fw today [FILE]
 
 OPTIONS
   -f, --force
@@ -63,5 +79,21 @@ OPTIONS
   -n, --name=name  name to print
 ```
 
-_See code: [src/commands/init.ts](https://github.com/VadimKh/fw/blob/v0.0.0/src/commands/init.ts)_
+_See code: [src/commands/today.ts](https://github.com/VadimKh/fw/blob/v0.0.0/src/commands/today.ts)_
+
+## `fw todo [FILE]`
+
+describe the command here
+
+```
+USAGE
+  $ fw todo [FILE]
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+```
+
+_See code: [@cli-assistant/fw-wunderlist](https://github.com/VadimKh/fw-wunderlist/blob/v0.0.0/src/commands/todo.ts)_
 <!-- commandsstop -->
