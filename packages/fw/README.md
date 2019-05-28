@@ -20,7 +20,7 @@ $ npm install -g @cli-assistant/fw
 $ fw COMMAND
 running command...
 $ fw (-v|--version|version)
-@cli-assistant/fw/0.0.0 darwin-x64 node-v10.5.0
+@cli-assistant/fw/1.0.1 darwin-x64 node-v11.11.0
 $ fw --help [COMMAND]
 USAGE
   $ fw COMMAND
@@ -63,7 +63,7 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src/commands/init.ts](https://github.com/VadimKh/fw/blob/v0.0.0/src/commands/init.ts)_
+_See code: [src/commands/init.ts](https://github.com/VadimKh/fw/blob/v1.0.1/src/commands/init.ts)_
 
 ## `fw today [FILE]`
 
@@ -79,7 +79,7 @@ OPTIONS
   -n, --name=name  name to print
 ```
 
-_See code: [src/commands/today.ts](https://github.com/VadimKh/fw/blob/v0.0.0/src/commands/today.ts)_
+_See code: [src/commands/today.ts](https://github.com/VadimKh/fw/blob/v1.0.1/src/commands/today.ts)_
 
 ## `fw todo [FILE]`
 
@@ -95,5 +95,5 @@ OPTIONS
   -n, --name=name  name to print
 ```
 
-_See code: [@cli-assistant/fw-wunderlist](https://github.com/VadimKh/fw-wunderlist/blob/v0.0.0/src/commands/todo.ts)_
+_See code: [@cli-assistant/fw-wunderlist](https://github.com/VadimKh/fw-wunderlist/blob/v1.0.1/src/commands/todo.ts)_
 <!-- commandsstop -->

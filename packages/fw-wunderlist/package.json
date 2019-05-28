@@ -1,13 +1,13 @@
 {
   "name": "@cli-assistant/fw-wunderlist",
   "description": "Working with wunderlist",
-  "version": "0.0.0",
+  "version": "1.0.1",
   "author": "VadimKh @VadimKh",
   "bugs": "https://github.com/VadimKh/fw-wunderlist/issues",
   "dependencies": {
+    "@cli-assistant/fw-core": "^1.0.1",
     "@oclif/command": "^1",
     "@oclif/config": "^1",
-    "@cli-assistant/fw-core": "^0",
     "axios": "^0.18.0",
     "configstore": "^4.0.0",
     "enquirer": "^2.0.6",

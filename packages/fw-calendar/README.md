@@ -19,7 +19,7 @@ $ npm install -g fw-calendar
 $ oclif-example COMMAND
 running command...
 $ oclif-example (-v|--version|version)
-fw-calendar/0.0.0 darwin-x64 node-v10.5.0
+fw-calendar/1.0.1 darwin-x64 node-v11.11.0
 $ oclif-example --help [COMMAND]
 USAGE
   $ oclif-example COMMAND
@@ -48,5 +48,5 @@ EXAMPLE
   hello world from ./src/hello.ts!
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/VadimKh/fw-calendar/blob/v0.0.0/src/commands/hello.ts)_
+_See code: [src/commands/hello.ts](https://github.com/VadimKh/fw-calendar/blob/v1.0.1/src/commands/hello.ts)_
 <!-- commandsstop -->

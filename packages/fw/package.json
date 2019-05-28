@@ -1,15 +1,15 @@
 {
   "name": "@cli-assistant/fw",
   "description": "Daily flow helps you stay organized",
-  "version": "0.0.0",
+  "version": "1.0.1",
   "author": "VadimKh @VadimKh",
   "bin": {
     "fw": "./bin/run"
   },
   "bugs": "https://github.com/VadimKh/fw/issues",
   "dependencies": {
-    "@cli-assistant/fw-core": "^0",
-    "@cli-assistant/fw-wunderlist": "^0",
+    "@cli-assistant/fw-core": "^1.0.1",
+    "@cli-assistant/fw-wunderlist": "^1.0.1",
     "@oclif/command": "^1",
     "@oclif/config": "^1",
     "@oclif/plugin-help": "^2",

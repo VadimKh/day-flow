@@ -1,7 +1,7 @@
 {
   "name": "fw-calendar",
   "description": "Integration with google calendar",
-  "version": "0.0.0",
+  "version": "1.0.1",
   "author": "VadimKh @VadimKh",
   "bugs": "https://github.com/VadimKh/fw-calendar/issues",
   "dependencies": {
